@@ -1,0 +1,7 @@
+head(InsectSprays)
+tapply(InsectSprays$count, InsectSprays$spray, sum)
+x <- split(InsectSprays$count, InsectSprays$spray)
+x
+#unlist
+unlist(x)
+sapply(x,sum)
